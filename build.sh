@@ -3,7 +3,7 @@
 
 set -e
 
-APP_NAME="TaxRateLookUp"
+APP_NAME="SaleTaxRate"
 VERSION="1.0.0"
 MAIN_JAR="TaxRateLookUp.jar"
 MAIN_CLASS="Main"
@@ -24,7 +24,6 @@ case "$OS" in
             --input target \
             --main-jar "$MAIN_JAR" \
             --main-class "$MAIN_CLASS" \
-            --class-path "$DEPENDENCY" \
             --icon icons/app-icon.icns \
             --dest dist
         ;;
@@ -39,7 +38,6 @@ case "$OS" in
             --input target \
             --main-jar "$MAIN_JAR" \
             --main-class "$MAIN_CLASS" \
-            --class-path "$DEPENDENCY" \
             --icon icons/app-icon.ico \
             --win-menu \
             --win-shortcut \
@@ -56,7 +54,6 @@ case "$OS" in
             --input target \
             --main-jar "$MAIN_JAR" \
             --main-class "$MAIN_CLASS" \
-            --class-path "$DEPENDENCY" \
             --icon icons/app-icon.png \
             --dest dist
         ;;
