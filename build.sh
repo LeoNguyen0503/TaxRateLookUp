@@ -37,10 +37,13 @@ case "$OS" in
             --app-version "$VERSION" \
             --input target \
             --main-jar "$MAIN_JAR" \
-            --main-class "$MAIN_CLASS" \
             --icon icons/app-icon.ico \
+            --win-dir-chooser \
             --win-menu \
+            --win-menu-group "SaleTaxRate" \
             --win-shortcut \
+            --win-shortcut-prompt \
+            --win-per-user-install \
             --dest dist
         ;;
 
